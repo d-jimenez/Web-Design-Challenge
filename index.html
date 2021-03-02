@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>WeatherPy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-    <body>
+
+<body>
+    <nav class="navbar"></nav>
+
         <header>
             <h1>Latitude vs. Weather</h1>
         </header>
+    
+        <div class="container">
+        
+            <div class="row">
+                
+                <div class="col-md-1">
+                    <a href="#">Home</a>
+                </div>
+            
+                <div class="col-md-2">
+                    <a href="#">Comparison</a>
+                </div>
+            
+                <div class="col-md-1">
+                    <a href="#">Data</a>
+                </div>
+
+                <div class="col-md-1">                                       
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Visualizations<span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Max Temperature</a></li>
+                                <li><a href="#">Humidity</a></li>
+                                <li><a href="#">Cloudiness</a></li>
+                                <li><a href="#">Wind Speed</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container"></div>
         
         <section>
             <article>
@@ -16,27 +58,21 @@
                     <img src="Visualizations/Fig1.png" alt="City Latitude vs. Max Temperature">
                 </a>
             </article>
-        </section>
-
-        <section>
+    
             <article>
                 <h2>City Latitude vs. Humidity</h2>
                 <a href="humidity.html">
                     <img src="Visualizations/Fig2.png" alt="City Latitude vs. Humidity">
                 </a>
             </article>
-        </section>
 
-        <section>
             <article>
                 <h2>City Latitude vs. Cloudiness</h2>
                 <a href="cloudy.html">
                     <img src="Visualizations/Fig3.png" alt="City Latitude vs. Cloudiness">
                 </a>
             </article>
-        </section>
 
-        <section>
             <article>
                 <h2>City Latitude vs. Wind Speed</h2>
                 <a href="wind.html">
@@ -45,5 +81,7 @@
             </article>
         
         </section>
-    </body>
+    </div>
+</body>
+
 </html>
