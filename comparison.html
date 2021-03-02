@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparison</title>
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    
+    <nav class ="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Visualizations</a>
+              <div class="dropdown-content">
+                <a href="temperature.html">Max Temperature</a>
+                <a href="humidity.html">Humidity</a>
+                <a href="cloudy.html">Cloudiness</a>
+                <a href="wind.html">Wind Speed</a>
+              </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <header>
+            <h1>Comparison Weather vs. Latitude</h1>
+        </header>
+    </div>
+
+    <div class="container">
+        
+        <div class="row">
+
+            <!-- First of two columns -->
+            <div class="col-md-6">
+                <h2>City Latitude vs. Max Temperature</h2>
+                <a href="temperature.html">
+                    <img src="Visualizations/Fig1.png" alt="City Latitude vs. Max Temperature">
+                </a>
+            </div>
+      
+            <!-- Second of two columns -->
+            <div class="col-md-6">
+                <h2>City Latitude vs. Humidity</h2>
+                <a href="humidity.html">
+                    <img src="Visualizations/Fig2.png" alt="City Latitude vs. Humidity">
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- First of two columns -->
+            <div class="col-md-6">
+                <h2>City Latitude vs. Cloudiness</h2>
+                <a href="cloudy.html">
+                    <img src="Visualizations/Fig3.png" alt="City Latitude vs. Cloudiness">
+                </a>
+            </div>
+      
+            <!-- Second of two columns -->
+            <div class="col-md-6">
+                <h2>City Latitude vs. Wind Speed</h2>
+                <a href="wind.html">
+                    <img src="Visualizations/Fig4.png" alt="City Latitude vs. Wind Speed">   
+                </a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
