@@ -12,7 +12,7 @@
 
 .box_fig img{
     width:100%; 
-    height: 100%
+    height: auto
 }
 
 .box_home_figs {
@@ -26,7 +26,7 @@
 } */
 
 
-/* Styling for the navbar page */
+/* Styling for the navbar */
 .navbar_heading{
     width: 5%;
     text-align: center;
@@ -40,6 +40,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    text-align: left;
 }
 
 li {
@@ -49,7 +50,7 @@ li {
 li a, .dropbtn {
     display: inline-block;
     color: white;
-    text-align: center;
+    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
     }
@@ -83,4 +84,27 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+/* Style for: data.html */
+
+.datatable table {
+    width: 100%;
+    padding-top: 5px;
+}
+.datatable table, td, th {
+    border: 1px solid black;
+}
+  
+.datatable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datatable thead {
+    text-align: center;
+    font-weight:bold;
+}
+
+.datatable tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
