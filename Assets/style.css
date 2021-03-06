@@ -5,23 +5,33 @@
 .navbar{
     background-color: #333;
 }
+
 .active{
     background-color: rgb(0, 255, 200);
 }
 
-aside {
-    width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
-    font-style: italic;
-    background-color: lightgray;
-  }
+.box_fig img{
+    width:100%; 
+}
 
-  aside img{
-    width: 90%;
-    height: auto;
-  }
+.box_home_figs {
+    background-color: rgb(248,249,251);
+    padding: 2%
+}
+
+
+body .container-fluid {
+    background-color: rgb(42,73,110);
+}
+
+
+/* Styling for the navbar page */
+.navbar_heading{
+    width: 5%;
+    text-align: center;
+    float:left
+
+}
 
 ul {
     list-style-type: none;
