@@ -3,39 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Humidity</title>
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            background-color:#F7F9FB;
+            margin: 0;
+            font-family:'Arial', sans-serif;
+            font-weight: 400;
+        }
+
+    </style>
 </head>
     <body>
-        <nav class ="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Visualizations</a>
-                  <div class="dropdown-content">
-                    <a href="temperature.html">Max Temperature</a>
-                    <a href="#">Humidity</a>
-                    <a href="cloudy.html">Cloudiness</a>
-                    <a href="wind.html">Wind Speed</a>
-                  </div>
-                </li>
-            </ul>
-        </nav>
-
         <header>
-            <h1>City Latitude vs. Humidity</h1>
+            <div class ="container_navbar">
+                <section class='nav_title'>
+                    <p> Weather vs. Latitude: Visualizations</p>
+                </section>
+        
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a  href="data.html">Data</a></li>
+                        <li class='dropdown'>
+                            <a class='dropdown_btn' href="#">Visualizations</a>
+                            <div class="dropdown_menu">
+                                    <ul>
+                                        <li><a href="temperature.html">Max Temperature</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="#">Humidity</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="cloudy.html">Cloudiness</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="wind.html">Wind Speed</a></li>  
+        
+                                    </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            
+            </div>
         </header>
-        <section>
-            <article>
-                <a target="_blank" href="Visualizations/Fig2.png">
-                    <img src="Visualizations/Fig2.png" alt="City Latitude vs. Humidity">   
-                </a>
+        
+        <div class='page_title'>
+            <h1> Humidity</h1>
+        </div>
 
-            <p>This is the humidity trend for random cities.</p>
-            </article>
-        </section>
+        <div class='container-fluid content'>
+            <div class="row">
+                <div class="col-lg-6 heading">
+                    <section class='box'>
+                        <a target="_blank" href="Visualizations/Fig2.png">
+                            <img src="Visualizations/Fig2.png" alt="City Latitude vs. Humidity">   
+                        </a>
+                    </section>
+                    
+                </div>
+
+                <div class="col-lg-6 heading">
+                    <section class='analysis'>
+                        <p>
+                            A city's latitude and recorded humidity levels do not show an obvious correlation. 
+                            Humidity is a measure of the amount of moisture in the air while relative humidity is the amount of moisture in the air compared to the amount of moisture the air can actualy hold.
+                            Areas with higher levels of humidity are typically warmer and near large bodies of water.
+                        </p>
+                    </section>
+
+                    <section class='box'>
+                        <a target="_blank" href="Visualizations/humidity.jpg">
+                            <img src="Visualizations/humidity.jpg" alt="US Humidity Map">   
+                        </a> 
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+    
     </body>
 </html>

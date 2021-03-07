@@ -3,41 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Temperature</title>
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            background-color:#F7F9FB;
+            margin: 0;
+            font-family:'Arial', sans-serif;
+            font-weight: 400;
+        }
+
+    </style>
 </head>
     <body>
-        <nav class ="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Visualizations</a>
-                  <div class="dropdown-content">
-                    <a href="#">Max Temperature</a>
-                    <a href="humidity.html">Humidity</a>
-                    <a href="cloudy.html">Cloudiness</a>
-                    <a href="wind.html">Wind Speed</a>
-                  </div>
-                </li>
-            </ul>
-        </nav>
-
         <header>
-            <h1>Max Temperature vs. City Latitude</h1>
+            <div class ="container_navbar">
+                <section class='nav_title'>
+                    <p> Weather vs. Latitude: Visualizations</p>
+                </section>
+        
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a  href="data.html">Data</a></li>
+                        <li class='dropdown'>
+                            <a class='dropdown_btn' href="#">Visualizations</a>
+                            <div class="dropdown_menu">
+                                    <ul>
+                                        <li><a href="#">Max Temperature</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="humidity.html">Humidity</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="cloudy.html">Cloudiness</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="wind.html">Wind Speed</a></li>  
+        
+                                    </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            
+            </div>
         </header>
-        <section>
-            <article>
-                <a target="_blank" href="Visualizations/Fig1.png">
-                    <img src="Visualizations/Fig1.png" alt="City Latitude vs. Max Temperature">   
-                </a>
-                <p>The Max Temperature vs. City Latitude chart shows a strong relationship between a cities latitude, distance North ( + ) or South ( - ) from the equator (0) and temperature.
-                    As a cities latitude approches the equator, the maximum temperature increases. The data set appears to be made up of more cities that lie within the Norther Hemisphere.
-                    The highest temperature recorded is approximatly 110 degrees Ferenheit in a city located 20 degrees south of the equator. Near the equator, the highest temperature recorded was closer to 90 degrees Ferenheit.
-                </p>
-            </article>
-        </section>
+        
+        <div class='page_title'>
+            <h1> Max Temperature</h1>
+        </div>
+        
+        <div class='container-fluid content'>
+            <div class="row">
+                <div class="col-lg-6 heading">
+                    <section class='box'>
+                        <a target="_blank" href="Visualizations/Fig1.png">
+                            <img src="Visualizations/Fig1.png" alt="City Latitude vs. Max Temperature">   
+                        </a> 
+                    </section>
+                    
+                </div>
+
+                <div class="col-lg-6 heading">
+                    <section class='analysis'>
+                        <p>The Max Temperature vs. City Latitude chart shows a strong relationship between a cities latitude, distance North ( + ) or South ( - ) from the equator (0 degrese Latitude) and temperature.
+                            As a cities latitude approches the equator, the maximum temperature increases. The data set appears to be made up of more cities that lie within the Norther Hemisphere.
+                            The highest temperature recorded is approximatly 110 degrees Ferenheit in a city located 20 degrees south of the equator. Near the equator, the highest temperature recorded was closer to 90 degrees Ferenheit.
+                        </p>
+                    </section>
+
+                    <section class='box'>
+                        <a target="_blank" href="Visualizations/temp.png">
+                            <img src="Visualizations/temp.png" alt="Temperature at the Equator">   
+                        </a> 
+                    </section>
+                </div>
+
+            </div>
+        </div>
+        
     </body>
 </html>

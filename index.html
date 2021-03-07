@@ -2,67 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>WeatherPy</title>
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>WeatherPy</title>
+    <style>
 
+        body{
+            background-color:#F7F9FB;
+            margin: 0;
+            font-family:'Arial', sans-serif;
+            font-weight: 400;
+        }
+
+    </style>
 </head>
 
 <body>
-    <nav class ="navbar_entire">
-        <div class="navbar_buttons">
-            <ul>
-                <li><a class ="active" href="#">Home</a></li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Visualizations</a>
-                    <div class="dropdown-content">
-                        <a href="temperature.html">Max Temperature</a>
-                        <a href="humidity.html">Humidity</a>
-                        <a href="cloudy.html">Cloudiness</a>
-                        <a href="wind.html">Wind Speed</a>
-                  </div>
-                </li>
-            </ul>
+    <header>
+        <div class ="container_navbar">
+            <section class='nav_title'>
+                <p> Weather vs. Latitude: Home</p>
+            </section>
+
+            <nav>
+                <ul>
+                    <li><a class='active' href="#">Home</a></li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                    <li class='dropdown'>
+                        <a class='dropdown_btn'href="#">Visualizations</a>
+                        <div class="dropdown_menu">
+                                <ul>
+                                    <li><a href="temperature.html">Max Temperature</a></li>
+                                    <!-- <hr> -->
+                                    <li><a href="humidity.html">Humidity</a></li>
+                                    <!-- <hr> -->
+                                    <li><a href="cloudy.html">Cloudiness</a></li>
+                                    <!-- <hr> -->
+                                    <li><a href="wind.html">Wind Speed</a></li>  
+
+                                </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        
         </div>
-    </nav>
+    </header>
 
     <div class='container-fluid content'>
         <div class="row">
-            <div class="col-md-10 heading">
-                <div class="row">
-                    <div class="col-md-12 heading">
-                        <Header>
-                            <h1>Weather and Latitude Relationships</h1>
-                        </Header>
-                    </div>
-                </div>
+            <div class="col-md-12 heading">
+                <section>
+                    <h1>How Does A City's Latitude Impacts Weather Patterns?</h1>
+                </section>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="col-md-4 heading">
-                        <Header>
-                            <img src="Visualizations/weather_image.png" alt="Stock Wetaher Image">
-                            <p class="source">Source: https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg </p>
-                        </Header>
-                    </div>
+        <div class="row">
+            <div class="col-md-8 heading">
+                <Section>
+                    <p>Insert Weather Project Discription HERE </p>
+                </Section>
 
-                    <div class="col-md-8 heading">
-                        <Header>
-                            <p>Insert Weather Project Discription HERE </p>
-                        </Header>
-                    </div>
-                </div>
-                
+                <img src="Visualizations/weather_image.png" alt="Stock Wetaher Image">
+                <p class="source">Source: https://dv-website.s3.amazonaws.com/uploads/2019/05/jz_csweather_060619.jpg </p>
+
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <div class="box_home_figs">
 
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="box_fig">
                                 <i>Temperature vs. City Latitude</i>
                                 <a href="temperature.html">
@@ -70,10 +85,8 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
                     
-                    <div class='row'>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="box_fig">
                                 <i>Humidity vs. City Latitude</i>
                                 <a href="humidity.html">
@@ -84,7 +97,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="box_fig">
                                 <i>Cloudiness vs. City Latitude</i>
                                 <a href="cloudy.html">
@@ -92,10 +105,8 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class='row'>
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="box_fig">
                                 <i>Wind Speed vs. City Latitude</i>
                                 <a href="wind.html">
@@ -108,6 +119,6 @@
             </div>
         </div>
     </div>
-</body>
 
+</body>
 </html>

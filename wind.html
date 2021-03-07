@@ -3,40 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Wind</title>
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            background-color:#F7F9FB;
+            margin: 0;
+            font-family:'Arial', sans-serif;
+            font-weight: 400;
+        }
+
+    </style>
 </head>
     <body>
-        <nav class ="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Visualizations</a>
-                  <div class="dropdown-content">
-                    <a href="temperature.html">Max Temperature</a>
-                    <a href="humidity.html">Humidity</a>
-                    <a href="cloudy.html">Cloudiness</a>
-                    <a href="#">Wind Speed</a>
-                  </div>
-                </li>
-            </ul>
-        </nav>
-
         <header>
-            <h1>City Latitude vs. Wind Speed</h1>
+            <div class ="container_navbar">
+                <section class='nav_title'>
+                    <p> Weather vs. Latitude: Visualizations</p>
+                </section>
+        
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a  href="data.html">Data</a></li>
+                        <li class='dropdown'>
+                            <a class='dropdown_btn' href="#">Visualizations</a>
+                            <div class="dropdown_menu">
+                                    <ul>
+                                        <li><a href="temperature.html">Max Temperature</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="humidity.html">Humidity</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="cloudy.html">Cloudiness</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="#">Wind Speed</a></li>  
+        
+                                    </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            
+            </div>
         </header>
+        
+        <div class='page_title'>
+            <h1> Wind Speed</h1>
+        </div>
 
-        <section>
-            <article>
-                <a target="_blank" href="Visualizations/Fig4.png">
-                    <img src="Visualizations/Fig4.png" alt="City Latitude vs. Wind Speed">   
-                </a>
+        <div class='container-fluid content'>
+            <div class="row">
+                <div class="col-lg-6 heading">
+                    <section class='box'>
+                        <a target="_blank" href="Visualizations/Fig4.png">
+                            <img src="Visualizations/Fig4.png" alt="City Latitude vs. Wind Speed">   
+                        </a>
+                    </section>
+                    
+                </div>
 
-            <p>This is the wind speed trend for random cities.</p>
-            </article>
-        </section>
+                <div class="col-lg-6 heading">
+                    <section class='analysis'>
+                        <p>
+                            The trend between Wind Speed and Latitude is not particularyly strong. There are very slight indications that wind speed increases as a City's latitude is farther from the equator. 
+                            According to National Geographic, wind is primarily caised by the Sun's uneaven heating of the Earth, creating movements of warm and cool air. 
+                        </p>
+                    </section>
+                    <section class='cloudy_img'>
+                        <a target="_blank"href="Visualizations/wind.jpg">
+                            <img src="Visualizations/wind.jpg" alt="Wind Patterns">   
+                        </a>
+                        <p>Source: https://medium.com/wedr/cloudy-sky-9a8c486794a0</p>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
     </body>
 </html>

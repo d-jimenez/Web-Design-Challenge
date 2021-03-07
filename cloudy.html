@@ -3,39 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Cloudiness</title>
-    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        body{
+            background-color:#F7F9FB;
+            margin: 0;
+            font-family:'Arial', sans-serif;
+            font-weight: 400;
+        }
+
+    </style>
 </head>
     <body>
-        <nav class ="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="data.html">Data</a></li>
-                <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropbtn">Visualizations</a>
-                  <div class="dropdown-content">
-                    <a href="temperature.html">Max Temperature</a>
-                    <a href="humidity.html">Humidity</a>
-                    <a href="#">Cloudiness</a>
-                    <a href="wind.html">Wind Speed</a>
-                  </div>
-                </li>
-            </ul>
-        </nav>
-
         <header>
-            <h1>City Latitude vs. Cloudiness</h1>
+            <div class ="container_navbar">
+                <section class='nav_title'>
+                    <p> Weather vs. Latitude: Visualizations</p>
+                </section>
+        
+                <nav>
+                    <ul>
+                        <li><a  href="index.html">Home</a></li>
+                        <li><a href="comparison.html">Comparison</a></li>
+                        <li><a  href="data.html">Data</a></li>
+                        <li class='dropdown'>
+                            <a class='dropdown_btn' href="#">Visualizations</a>
+                            <div class="dropdown_menu">
+                                    <ul>
+                                        <li><a href="temperature.html">Max Temperature</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="humidity.html">Humidity</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="#">Cloudiness</a></li>
+                                        <!-- <hr> -->
+                                        <li><a href="wind.html">Wind Speed</a></li>  
+        
+                                    </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            
+            </div>
         </header>
-        <section>
-            <article>
-                <a target="_blank"href="Visualizations/Fig3.png">
-                    <img src="Visualizations/Fig3.png" alt="City Latitude vs. Cloudiness">   
-                </a>
+        
+        <div class='page_title'>
+            <h1> Cloudiness</h1>
+        </div>
 
-            <p>This is the coudiness trend for random cities.</p>
-            </article>
-        </section>
+        <div class='container-fluid content'>
+            <div class="row">
+                <div class="col-lg-6 heading">
+                    <section class='box'>
+                        <a target="_blank"href="Visualizations/Fig3.png">
+                            <img src="Visualizations/Fig3.png" alt="City Latitude vs. Cloudiness">   
+                        </a>
+                    </section>
+                    
+                </div>
+
+                <div class="col-lg-6 heading">
+                    <section class='analysis'>
+                        <p>
+                            The trend between CLoudiness (% cloud coverage) and the latitude of a particular city do not show a relationship.
+                            Cloudiness is a function of relative humidity in the air and the ambient temperature. 
+                            Because of this relationship, the latitude of a particular city would have little influence on the cloudines.
+                        </p>
+                    </section>
+                    <section class='cloudy_img'>
+                        <a target="_blank"href="Visualizations/cloudy.jpg">
+                            <img src="Visualizations/cloudy.jpg" alt="Cloudiness">   
+                        </a>
+                        <p>Source: https://medium.com/wedr/cloudy-sky-9a8c486794a0</p>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+ 
     </body>
 </html>
